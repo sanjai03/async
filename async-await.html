@@ -6,18 +6,24 @@
 
     <script>
     
-    function myConsole(value) {
+    function myConsole(value) { console.log(value)
         if(value)
-      document.getElementById("text").innerHTML=value
+        {
+            document.getElementById("text").innerHTML=value;
+        }
+      
     }
     
 
 async function add(num1,num2){
+    
     try {
         let sum = num1+num1
-        await setTimeout(myConsole(sum),10000)
+        console.log('aa');
+         await setTimeout(() => { console.log('cc')},10000)
+        console.log('bb');
     } catch (error) {
-        await setTimeout(myConsole(error),10000)
+         setTimeout(myConsole(error),10000)
     }
 }
 add(1,2)
