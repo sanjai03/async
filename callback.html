@@ -11,17 +11,21 @@
     
     function myConsole(value) {
         if(value)
-      document.getElementById("text").innerHTML=value
+        {
+            document.getElementById("text").innerHTML=value;
+        }
+      
     }
     
 
 function myCalculator(num1, num2,myConsole) {
   let sum = num1 + num2;
-  myConsole(sum)
+  
+  setTimeout(myConsole(sum),10000);
   return sum;
 }
 
-let result = myCalculator(5, 5,myConsole);
+ myCalculator(5, 5,myConsole);
 
 </script>
 
