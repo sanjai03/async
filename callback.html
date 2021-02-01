@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+    <p id="text"></p>
+
+
+    <script>
+    
+    function myConsole(value) {
+        if(value)
+      document.getElementById("text").innerHTML=value
+    }
+    
+
+function myCalculator(num1, num2,myConsole) {
+  let sum = num1 + num2;
+  myConsole(sum)
+  return sum;
+}
+
+let result = myCalculator(5, 5,myConsole);
+
+</script>
+
+</body>
+</html>
